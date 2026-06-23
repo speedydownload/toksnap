@@ -158,25 +158,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Internal Links */}
-      <section className="py-16 bg-card/50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-center mb-8">Explore <span className="gradient-text">TokSnap</span></h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {[
-              { href: '/mp3-downloader', label: 'TikTok MP3 Downloader' },
-              { href: '/faq', label: 'FAQ' },
-              { href: '/blog', label: 'Blog & Guides' },
-              { href: '/about', label: 'About TokSnap' },
-              { href: '/privacy', label: 'Privacy Policy' },
-              { href: '/contact', label: 'Contact Us' },
-            ].map((link) => (
-              <Link key={link.href} href={link.href} className="p-4 bg-card border border-border rounded-xl hover:border-primary/30 transition-all text-sm font-medium hover:text-primary">{link.label}</Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Ad slot placeholder for future use */}
     </>
   );
